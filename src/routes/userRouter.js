@@ -1,9 +1,9 @@
 import { Router } from "express";
 
-import { validateSchema } from "../middlewares/joiValidationMiddleware.js";
-import { loginSchema, signUpSchema } from "../schemas/userSchemas.js";
-import { login, signUp, logout } from "../controllers/userControllers.js";
-import { validateToken } from "../middlewares/authMiddleware.js";
+import { validateSchema } from "./../middlewares/joiValidationMiddleware.js";
+import { loginSchema, signUpSchema } from "./../schemas/userSchemas.js";
+import { login, signUp, logout } from "./../controllers/userControllers.js";
+import { validateToken } from "./../middlewares/authMiddleware.js";
 
 const userRouter = Router();
 
